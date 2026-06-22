@@ -1,66 +1,67 @@
-# calculator_gui.py
 import tkinter as tk
-from math_functions import add, subtract, multiply, divide
+from math_functions import evaluate
+
+
+def press(value):
+    entry.insert(tk.END, value)
+
+
+def clear():
+    entry.delete(0, tk.END)
+
 
 def calculate():
     try:
-        num1 = float(entry1.get())
-        num2 = float(entry2.get())
-        operation = operation_var.get()
-
-        if operation == "+":
-            result = add(num1, num2)
-        elif operation == "-":
-            result = subtract(num1, num2)
-        elif operation == "*":
-            result = multiply(num1, num2)
-        elif operation == "/":
-            result = divide(num1, num2)
-        else:
-            result = "Invalid operator"
-
-        result_label.config(text=str(result))
-
-    except ValueError:
-        result_label.config(text="Invalid input")
+        result = evaluate(entry.get())
+        entry.delete(0, tk.END)
+        entry.insert(0, str(result))
+        history.insert(tk.END, f"{result}\n")
+    except Exception as e:
+        entry.delete(0, tk.END)
+        entry.insert(0, "Error")
 
 
+# ---------------- UI ----------------
 root = tk.Tk()
-root.title("Calculator GUI")
+root.title("Scientific Calculator")
+root.geometry("420x600")
+root.resizable(False, False)
 
-# Labels
-label1 = tk.Label(root, text="Number 1:")
-label1.pack()
+entry = tk.Entry(root, font=("Arial", 20), justify="right")
+entry.pack(fill="both", padx=10, pady=10)
 
-label2 = tk.Label(root, text="Number 2:")
-label2.pack()
+history = tk.Text(root, height=5)
+history.pack(fill="both", padx=10)
 
-# Entry fields
-entry1 = tk.Entry(root)
-entry1.pack()
+# Buttons layout
+buttons = [
+    ["7", "8", "9", "/", "sin("],
+    ["4", "5", "6", "*", "cos("],
+    ["1", "2", "3", "-", "tan("],
+    ["0", ".", "(", ")", "+"],
+    ["sqrt(", "log(", "ln(", "^", "pi"],
+    ["e", "fact(", "C", "="]
+]
 
-entry2 = tk.Entry(root)
-entry2.pack()
+frame = tk.Frame(root)
+frame.pack()
 
-# Operation selection
-operation_var = tk.StringVar(value="+")
-radio_plus = tk.Radiobutton(root, text="+", variable=operation_var, value="+")
-radio_minus = tk.Radiobutton(root, text="-", variable=operation_var, value="-")
-radio_multiply = tk.Radiobutton(root, text="*", variable=operation_var, value="*")
-radio_divide = tk.Radiobutton(root, text="/", variable=operation_var, value="/")
+for r, row in enumerate(buttons):
+    for c, btn in enumerate(row):
 
-radio_plus.pack()
-radio_minus.pack()
-radio_multiply.pack()
-radio_divide.pack()
+        if btn == "=":
+            action = calculate
+        elif btn == "C":
+            action = clear
+        else:
+            action = lambda x=btn: press(x)
 
-
-# Calculate button
-calculate_button = tk.Button(root, text="Calculate", command=calculate)
-calculate_button.pack()
-
-# Result label
-result_label = tk.Label(root, text="")
-result_label.pack()
+        tk.Button(
+            frame,
+            text=btn,
+            width=7,
+            height=2,
+            command=action
+        ).grid(row=r, column=c, padx=3, pady=3)
 
 root.mainloop()
