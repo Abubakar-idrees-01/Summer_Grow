@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "dataset_name": "winequality-red-edited",
+    "generated_at": "2026-06-29T00:17:25.015327",
+    "execution_time_seconds": 8.74
+  },
+  "dataset": {
+    "shape": {
+      "rows": 1359,
+      "columns": 12
+    },
+    "memory_mb": 0.12,
+    "columns": [
+      "fixed_acidity",
+      "volatile_acidity",
+      "citric_acid",
+      "residual_sugar",
+      "chlorides",
+      "free_sulfur_dioxide",
+      "total_sulfur_dioxide",
+      "density",
+      "pH",
+      "sulphates",
+      "alcohol",
+      "quality"
+    ],
+    "numerical_columns": [
+      "fixed_acidity",
+      "volatile_acidity",
+      "citric_acid",
+      "residual_sugar",
+      "chlorides",
+      "free_sulfur_dioxide",
+      "total_sulfur_dioxide",
+      "density",
+      "pH",
+      "sulphates",
+      "alcohol",
+      "quality"
+    ],
+    "categorical_columns": []
+  },
+  "generated_files": [
+    {
+      "filename": "00_summary.txt",
+      "size_kb": 1.7,
+      "path": "reports/winequality-red-edited/00_summary.txt"
+    },
+    {
+      "filename": "01_data_types_summary.csv",
+      "size_kb": 0.41,
+      "path": "reports/winequality-red-edited/01_data_types_summary.csv"
+    },
+    {
+      "filename": "02_missing_values.csv",
+      "size_kb": 0.24,
+      "path": "reports/winequality-red-edited/02_missing_values.csv"
+    },
+    {
+      "filename": "03_numerical_statistics.csv",
+      "size_kb": 1.45,
+      "path": "reports/winequality-red-edited/03_numerical_statistics.csv"
+    },
+    {
+      "filename": "05_correlation_matrix.csv",
+      "size_kb": 2.96,
+      "path": "reports/winequality-red-edited/05_correlation_matrix.csv"
+    }
+  ]
+}

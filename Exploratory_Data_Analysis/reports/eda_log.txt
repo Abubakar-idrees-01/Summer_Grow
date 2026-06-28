@@ -1,0 +1,28 @@
+2026-06-29 00:17:16,168 - INFO - ================================================================================
+2026-06-29 00:17:16,173 - INFO - EDA Pipeline Started
+2026-06-29 00:17:16,176 - INFO - Timestamp: 2026-06-29 00:17:16
+2026-06-29 00:17:16,179 - INFO - ================================================================================
+2026-06-29 00:17:16,273 - INFO - Loading file: datasets/wine+quality/winequality-red-edited.csv (Type: .csv)
+2026-06-29 00:17:16,419 - INFO - Detected encoding: ascii
+2026-06-29 00:17:16,426 - INFO - Detected delimiter: ,
+2026-06-29 00:17:16,441 - INFO - CSV loaded successfully
+2026-06-29 00:17:16,443 - INFO - Dataset loaded. Shape: (1359, 12)
+2026-06-29 00:17:16,462 - INFO - Output directory created: reports/winequality-red-edited
+2026-06-29 00:17:16,512 - INFO - Dataset shape: (1359, 12)
+2026-06-29 00:17:16,571 - INFO - Data types summary exported to reports/winequality-red-edited/01_data_types_summary.csv
+2026-06-29 00:17:16,610 - INFO - Missing values summary exported to reports/winequality-red-edited/02_missing_values.csv
+2026-06-29 00:17:16,740 - INFO - Numerical statistics exported to reports/winequality-red-edited/03_numerical_statistics.csv
+2026-06-29 00:17:16,855 - INFO - Correlation matrix exported to reports/winequality-red-edited/05_correlation_matrix.csv
+2026-06-29 00:17:17,337 - WARNING - YData Profiling not installed.
+2026-06-29 00:17:20,073 - INFO - Starting Sweetviz report generation...
+2026-06-29 00:17:20,075 - ERROR - Sweetviz error: analyze() got an unexpected keyword argument 'target_name'
+2026-06-29 00:17:21,806 - ERROR - AutoViz error: name 'pkg_resources' is not defined
+2026-06-29 00:17:24,355 - INFO - Launching D-Tale dashboard...
+2026-06-29 00:17:24,823 - INFO - D-Tale dashboard launched at None
+2026-06-29 00:17:24,863 - WARNING - No such comm: 3d7f9f34877343b69fe51102ae1e6f64
+2026-06-29 00:17:24,948 - INFO - Text summary exported to reports/winequality-red-edited/00_summary.txt
+2026-06-29 00:17:25,022 - INFO - Manifest exported to reports/winequality-red-edited/manifest.json
+2026-06-29 00:17:25,096 - INFO - ================================================================================
+2026-06-29 00:17:25,106 - INFO - EDA Pipeline Completed Successfully
+2026-06-29 00:17:25,108 - INFO - Total Execution Time: 8.74 seconds
+2026-06-29 00:17:25,115 - INFO - ================================================================================

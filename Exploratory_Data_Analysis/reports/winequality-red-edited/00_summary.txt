@@ -1,0 +1,33 @@
+Dataset Analysis Summary - 2026-06-29 00:17:24
+Dataset: winequality-red-edited
+Rows: 1,359
+Columns: 12
+Memory Usage: 0.12 MB
+
+COLUMNS:
+fixed_acidity                  | Type: float64         | Missing:      0 ( 0.00%)
+volatile_acidity               | Type: float64         | Missing:      0 ( 0.00%)
+citric_acid                    | Type: float64         | Missing:      0 ( 0.00%)
+residual_sugar                 | Type: float64         | Missing:      0 ( 0.00%)
+chlorides                      | Type: float64         | Missing:      0 ( 0.00%)
+free_sulfur_dioxide            | Type: float64         | Missing:      0 ( 0.00%)
+total_sulfur_dioxide           | Type: float64         | Missing:      0 ( 0.00%)
+density                        | Type: float64         | Missing:      0 ( 0.00%)
+pH                             | Type: float64         | Missing:      0 ( 0.00%)
+sulphates                      | Type: float64         | Missing:      0 ( 0.00%)
+alcohol                        | Type: float64         | Missing:      0 ( 0.00%)
+quality                        | Type: int64           | Missing:      0 ( 0.00%)
+
+NUMERICAL STATISTICS:
+fixed_acidity: min=4.6000, max=15.9000, mean=8.3106
+volatile_acidity: min=0.1200, max=1.5800, mean=0.5295
+citric_acid: min=0.0000, max=1.0000, mean=0.2723
+residual_sugar: min=0.9000, max=15.5000, mean=2.5234
+chlorides: min=0.0120, max=0.6110, mean=0.0881
+free_sulfur_dioxide: min=1.0000, max=72.0000, mean=15.8933
+total_sulfur_dioxide: min=6.0000, max=289.0000, mean=46.8260
+density: min=0.9901, max=1.0037, mean=0.9967
+pH: min=2.7400, max=4.0100, mean=3.3098
+sulphates: min=0.3300, max=2.0000, mean=0.6587
+alcohol: min=8.4000, max=14.9000, mean=10.4323
+quality: min=1.0000, max=6.0000, mean=3.6233
