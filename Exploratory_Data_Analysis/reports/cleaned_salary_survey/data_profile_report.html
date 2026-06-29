@@ -1,0 +1,414 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Data Profile Report - cleaned_salary_survey</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+            .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+            h1 { color: #333; border-bottom: 3px solid #007bff; padding-bottom: 10px; }
+            h2 { color: #555; margin-top: 30px; }
+            table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+            th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+            th { background-color: #007bff; color: white; }
+            tr:hover { background-color: #f9f9f9; }
+            .stat-box { display: inline-block; margin: 10px; padding: 15px; background: #f9f9f9; border-left: 4px solid #007bff; }
+            .section { margin: 20px 0; padding: 15px; background: #f9f9f9; border-radius: 5px; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📊 Data Profile Report: cleaned_salary_survey</h1>
+
+            <div class="section">
+                <h2>📈 Dataset Overview</h2>
+                <div class="stat-box">
+                    <strong>Rows:</strong> 28,063
+                </div>
+                <div class="stat-box">
+                    <strong>Columns:</strong> 22
+                </div>
+                <div class="stat-box">
+                    <strong>Memory:</strong> 29.39 MB
+                </div>
+                <div class="stat-box">
+                    <strong>Missing Values:</strong> 0
+                </div>
+            </div>
+
+            <h2>📋 Column Information</h2>
+            <table>
+                <tr>
+                    <th>Column</th>
+                    <th>Type</th>
+                    <th>Non-Null</th>
+                    <th>Null</th>
+                    <th>Null %</th>
+                </tr>
+    
+                <tr>
+                    <td>timestamp</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>age</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>industry</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>job_title</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>job_title_context</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>annual_salary</td>
+                    <td>int64</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>additional_compensation</td>
+                    <td>float64</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>currency</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>country</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>state</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>city</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>total_experience_years</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>field_experience_years</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>education_level</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>gender</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>race</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>race_clean</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>country_clean</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>month</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>day</td>
+                    <td>int64</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>year</td>
+                    <td>int64</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>time</td>
+                    <td>object</td>
+                    <td>28,063</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                </tr>
+        
+            </table>
+
+            <h2>🔢 Numerical Statistics</h2>
+            <table>
+                <tr>
+                    <th>Column</th>
+                    <th>Mean</th>
+                    <th>Std</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                </tr>
+    
+                <tr>
+                    <td>annual_salary</td>
+                    <td>372763.9462</td>
+                    <td>36237806.2108</td>
+                    <td>0.0000</td>
+                    <td>6000070000.0000</td>
+                </tr>
+        
+                <tr>
+                    <td>additional_compensation</td>
+                    <td>13399.6176</td>
+                    <td>717521.3679</td>
+                    <td>0.0000</td>
+                    <td>120000000.0000</td>
+                </tr>
+        
+                <tr>
+                    <td>day</td>
+                    <td>24.3307</td>
+                    <td>8.0604</td>
+                    <td>1.0000</td>
+                    <td>31.0000</td>
+                </tr>
+        
+                <tr>
+                    <td>year</td>
+                    <td>2021.0456</td>
+                    <td>0.3602</td>
+                    <td>2021.0000</td>
+                    <td>2026.0000</td>
+                </tr>
+        
+            </table>
+
+            <h2>📊 Top Values (Categorical)</h2>
+            <table>
+                <tr>
+                    <th>Column</th>
+                    <th>Unique</th>
+                    <th>Top Value</th>
+                    <th>Frequency</th>
+                </tr>
+    
+                <tr>
+                    <td>timestamp</td>
+                    <td>25293</td>
+                    <td>2021-04-27 12:05:06</td>
+                    <td>5</td>
+                </tr>
+        
+                <tr>
+                    <td>age</td>
+                    <td>7</td>
+                    <td>25-34</td>
+                    <td>12625</td>
+                </tr>
+        
+                <tr>
+                    <td>industry</td>
+                    <td>1225</td>
+                    <td>Computing or Tech</td>
+                    <td>4698</td>
+                </tr>
+        
+                <tr>
+                    <td>job_title</td>
+                    <td>14433</td>
+                    <td>Software Engineer</td>
+                    <td>286</td>
+                </tr>
+        
+                <tr>
+                    <td>job_title_context</td>
+                    <td>7029</td>
+                    <td>Unknown</td>
+                    <td>20812</td>
+                </tr>
+        
+                <tr>
+                    <td>currency</td>
+                    <td>11</td>
+                    <td>USD</td>
+                    <td>23354</td>
+                </tr>
+        
+                <tr>
+                    <td>country</td>
+                    <td>379</td>
+                    <td>US</td>
+                    <td>21480</td>
+                </tr>
+        
+                <tr>
+                    <td>state</td>
+                    <td>139</td>
+                    <td>Unknown</td>
+                    <td>5056</td>
+                </tr>
+        
+                <tr>
+                    <td>city</td>
+                    <td>4876</td>
+                    <td>Boston</td>
+                    <td>770</td>
+                </tr>
+        
+                <tr>
+                    <td>total_experience_years</td>
+                    <td>8</td>
+                    <td>11 - 20 years</td>
+                    <td>9588</td>
+                </tr>
+        
+                <tr>
+                    <td>field_experience_years</td>
+                    <td>8</td>
+                    <td>11 - 20 years</td>
+                    <td>6513</td>
+                </tr>
+        
+                <tr>
+                    <td>education_level</td>
+                    <td>7</td>
+                    <td>College degree</td>
+                    <td>13504</td>
+                </tr>
+        
+                <tr>
+                    <td>gender</td>
+                    <td>4</td>
+                    <td>Woman</td>
+                    <td>21316</td>
+                </tr>
+        
+                <tr>
+                    <td>race</td>
+                    <td>53</td>
+                    <td>White</td>
+                    <td>23150</td>
+                </tr>
+        
+                <tr>
+                    <td>race_clean</td>
+                    <td>7</td>
+                    <td>White</td>
+                    <td>23150</td>
+                </tr>
+        
+                <tr>
+                    <td>country_clean</td>
+                    <td>201</td>
+                    <td>Us</td>
+                    <td>21542</td>
+                </tr>
+        
+                <tr>
+                    <td>month</td>
+                    <td>12</td>
+                    <td>April</td>
+                    <td>22710</td>
+                </tr>
+        
+                <tr>
+                    <td>time</td>
+                    <td>21695</td>
+                    <td>12:25:20</td>
+                    <td>6</td>
+                </tr>
+        
+            </table>
+
+            <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #666;">
+                <p>Generated automatically using Python Pandas</p>
+            </footer>
+        </div>
+    </body>
+    </html>
+    
