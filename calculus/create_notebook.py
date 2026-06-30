@@ -1,8 +1,177 @@
 import json
 
-notebook_content = """PASTE THE JSON I GAVE YOU HERE"""
+notebook_content = """{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Linear Algebra for Data Science - Part 4\n",
+    "## Vector Spaces, Linear Independence, Basis\n",
+    "\n",
+    "We continue using the same House Price dataset to understand feature space in ML."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import pandas as pd\n",
+    "\n",
+    "np.set_printoptions(suppress=True)\n",
+    "\n",
+    "data = {\n",
+    "    'Area': [1000, 1500, 2000, 2500, 3000],\n",
+    "    'Bedrooms': [2, 3, 3, 4, 4],\n",
+    "    'Age': [10, 5, 20, 15, 8],\n",
+    "    'Distance': [5, 3, 10, 2, 7],\n",
+    "    'Price': [200000, 300000, 250000, 400000, 500000]\n",
+    "}\n",
+    "\n",
+    "df = pd.DataFrame(data)\n",
+    "\n",
+    "X = df[['Area','Bedrooms','Age','Distance']].to_numpy()\n",
+    "X"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 1. Vector Space\n",
+    "\n",
+    "A vector space is a collection of all possible feature vectors.\n",
+    "\n",
+    "In ML:\n",
+    "- Each row = a vector\n",
+    "- All rows together = vector space\n",
+    "\n",
+    "This is called the feature space."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 2. Linear Independence\n",
+    "\n",
+    "Vectors are independent if none of them can be written using others.\n",
+    "\n",
+    "In ML terms:\n",
+    "- Independent features = useful\n",
+    "- Dependent features = redundant"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.linalg.matrix_rank(X)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 3. Basis\n",
+    "\n",
+    "Basis = smallest set of independent vectors that describe the whole space.\n",
+    "\n",
+    "In ML:\n",
+    "- Basis = most important features\n",
+    "- Everything else is derived from them"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 4. Span\n",
+    "\n",
+    "Span = all possible combinations of vectors.\n",
+    "\n",
+    "In ML:\n",
+    "- Span = all possible data representations from features"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 5. Feature Space Intuition\n",
+    "\n",
+    "Each feature adds a new dimension:\n",
+    "- Area → 1D\n",
+    "- Area + Bedrooms → 2D\n",
+    "- Area + Bedrooms + Age → 3D\n",
+    "- All features → 4D space"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 6. Why this matters in Data Science\n",
+    "\n",
+    "- ML models learn in vector space\n",
+    "- Each feature = a dimension\n",
+    "- Good features = independent directions\n",
+    "- Bad features = redundant directions"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 7. Practical Check: Redundant Feature Effect"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Add duplicate feature\n",
+    "X_bad = np.column_stack([X, X[:,0]])\n",
+    "\n",
+    "print(\"Original rank:\", np.linalg.matrix_rank(X))\n",
+    "print(\"Bad rank:\", np.linalg.matrix_rank(X_bad))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Key Takeaways\n",
+    "\n",
+    "- Vector space = all possible data points\n",
+    "- Linear independence = no redundant features\n",
+    "- Basis = minimal important features\n",
+    "- ML = learning structure in vector space"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}"""
 
-with open("linear_algebra_ds_5.ipynb", "w", encoding="utf-8") as f:
+with open("linear_algebra_ds_4.ipynb", "w", encoding="utf-8") as f:
     f.write(notebook_content)
 
 print("Notebook created!")
