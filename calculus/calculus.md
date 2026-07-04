@@ -157,7 +157,7 @@ This module is designed for:
 
 ---
 
-## 📌 Key Takeaway
+## 📌 Key Takeaway for You
 
 Calculus is not just about solving mathematical problems—it is the language of **optimization**. Every time a machine learning model updates its parameters to reduce prediction error, it relies on calculus. Understanding these concepts will help you build intuition for how modern AI models learn from data and make better decisions.
 
