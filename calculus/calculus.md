@@ -163,4 +163,4 @@ Calculus is not just about solving mathematical problems—it is the language of
 
 ---
 
-**Happy Learning! 🚀**
+**Happy Learning! 🚀**[text](../../../../..)
