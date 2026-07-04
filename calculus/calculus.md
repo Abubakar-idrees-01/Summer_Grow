@@ -1,4 +1,4 @@
-# 📘 Calculus for Data Science
+# 📘 Calculus for Data Science theory overveiw
 
 > **Essential Calculus Concepts for Artificial Intelligence, Machine Learning, and Data Science**
 
