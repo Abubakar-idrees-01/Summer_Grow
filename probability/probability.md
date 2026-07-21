@@ -391,7 +391,7 @@ Explain Naive Bayes and Bayesian Machine Learning.
 
 ---
 
-# Topic 7 — Hypothesis Testing
+# Topic 7 — Hypothesis Testing.
 
 Explain:
 
